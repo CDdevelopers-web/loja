@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promoções - Fashion Store</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Fashion Store</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#produtos">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="novidades.html">Novidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="promocoes.html">Promoções</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                            Categorias
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html#camisetas">Camisetas</a></li>
+                            <li><a class="dropdown-item" href="index.html#calcas">Calças</a></li>
+                            <li><a class="dropdown-item" href="index.html#vestidos">Vestidos</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="promocoes.html">Ofertas</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contato">Contato</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <button class="btn btn-outline-dark me-2" type="button" data-bs-toggle="modal" data-bs-target="#cartModal">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="badge bg-dark text-white ms-1 rounded-pill cart-count">0</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Promoções Banner -->
+    <section class="promocoes-banner py-5 mt-5 bg-dark text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h1 class="display-4">Super Promoções</h1>
+                    <p class="lead">Aproveite descontos incríveis em produtos selecionados!</p>
+                    <div class="countdown-timer mt-4">
+                        <h3>Termina em:</h3>
+                        <div class="d-flex gap-3">
+                            <div class="timer-item">
+                                <span id="days">00</span>
+                                <small>Dias</small>
+                            </div>
+                            <div class="timer-item">
+                                <span id="hours">00</span>
+                                <small>Horas</small>
+                            </div>
+                            <div class="timer-item">
+                                <span id="minutes">00</span>
+                                <small>Minutos</small>
+                            </div>
+                            <div class="timer-item">
+                                <span id="seconds">00</span>
+                                <small>Segundos</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://images.pexels.com/photos/6626903/pexels-photo-6626903.jpeg" alt="Promoções" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produtos em Promoção -->
+    <section class="promocoes-produtos py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Produtos em Promoção</h2>
+            <div class="row">
+                <div class="col-12 mb-4">
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-outline-dark active" data-filter="all">Todos</button>
+                        <button type="button" class="btn btn-outline-dark" data-filter="camisetas">Camisetas</button>
+                        <button type="button" class="btn btn-outline-dark" data-filter="calcas">Calças</button>
+                        <button type="button" class="btn btn-outline-dark" data-filter="vestidos">Vestidos</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row products-container">
+                <!-- Product cards -->
+                <div class="col-md-4">
+                    <div class="product-card">
+                        <div class="discount-badge">-30%</div>
+                        <img src="https://images.pexels.com/photos/6626903/pexels-photo-6626903.jpeg" alt="Produto 1">
+                        <div class="product-info">
+                            <h3>Produto 1</h3>
+                            <p class="price"><span class="original-price">R$ 129,90</span> R$ 89,90</p>
+                            <button class="btn btn-primary">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="product-card">
+                        <div class="discount-badge">-25%</div>
+                        <img src="https://images.pexels.com/photos/6626967/pexels-photo-6626967.jpeg" alt="Produto 2">
+                        <div class="product-info">
+                            <h3>Produto 2</h3>
+                            <p class="price"><span class="original-price">R$ 159,90</span> R$ 119,90</p>
+                            <button class="btn btn-primary">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="product-card">
+                        <div class="discount-badge">-40%</div>
+                        <img src="https://images.pexels.com/photos/6311251/pexels-photo-6311251.jpeg" alt="Produto 3">
+                        <div class="product-info">
+                            <h3>Produto 3</h3>
+                            <p class="price"><span class="original-price">R$ 199,90</span> R$ 119,90</p>
+                            <button class="btn btn-primary">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cupom de Desconto -->
+    <section class="cupom-section py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <h3>Ganhe 10% OFF na primeira compra!</h3>
+                    <p>Use o cupom <strong>PRIMEIRA10</strong> no checkout</p>
+                    <button class="btn btn-dark copy-coupon" data-coupon="PRIMEIRA10">Copiar Cupom</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Modal -->
+    <div class="modal fade" id="cartModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Carrinho de Compras</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="cart-items">
+                        <!-- Cart items will be dynamically loaded here -->
+                    </div>
+                    <div class="cart-total mt-3">
+                        <h5>Total: R$ <span class="total-amount">0,00</span></h5>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continuar Comprando</button>
+                    <button type="button" class="btn btn-primary checkout-btn">Finalizar Compra</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div class="modal fade" id="checkoutModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Finalizar Compra</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="checkoutForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nome Completo</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="address" class="form-label">Endereço</label>
+                            <input type="text" class="form-control" id="address" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="payment" class="form-label">Forma de Pagamento</label>
+                            <select class="form-select" id="payment" required>
+                                <option value="">Selecione...</option>
+                                <option value="pix">PIX</option>
+                                <option value="card">Cartão de Crédito</option>
+                                <option value="transfer">Transferência Bancária</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Voltar</button>
+                    <button type="button" class="btn btn-success" id="whatsappCheckout">Finalizar no WhatsApp</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/promocoes.js"></script>
+</body>
+</html>

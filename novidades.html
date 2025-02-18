@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novidades - Fashion Store</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Fashion Store</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#produtos">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="novidades.html">Novidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="promocoes.html">Promoções</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                            Categorias
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html#camisetas">Camisetas</a></li>
+                            <li><a class="dropdown-item" href="index.html#calcas">Calças</a></li>
+                            <li><a class="dropdown-item" href="index.html#vestidos">Vestidos</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="promocoes.html">Ofertas</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contato">Contato</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <button class="btn btn-outline-dark me-2" type="button" data-bs-toggle="modal" data-bs-target="#cartModal">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="badge bg-dark text-white ms-1 rounded-pill cart-count">0</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Novidades Section -->
+    <section class="novidades-section py-5 mt-5">
+        <div class="container">
+            <h1 class="text-center mb-5">Novidades</h1>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card new-collection-card">
+                        <img src="https://images.pexels.com/photos/6626903/pexels-photo-6626903.jpeg" class="card-img-top" alt="Coleção Verão">
+                        <div class="card-body">
+                            <h3>Nova Coleção Verão</h3>
+                            <p class="card-text">Descubra as últimas tendências para a temporada mais quente do ano.</p>
+                            <a href="#" class="btn btn-dark">Ver Coleção</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card new-collection-card">
+                        <img src="https://images.pexels.com/photos/6626967/pexels-photo-6626967.jpeg" class="card-img-top" alt="Coleção Casual">
+                        <div class="card-body">
+                            <h3>Linha Casual</h3>
+                            <p class="card-text">Peças versáteis e confortáveis para seu dia a dia.</p>
+                            <a href="#" class="btn btn-dark">Ver Coleção</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-12">
+                    <h2 class="text-center mb-4">Últimos Lançamentos</h2>
+                    <div class="row products-container">
+                        <div class="col-md-4">
+                            <div class="product-card">
+                                <img src="https://images.pexels.com/photos/6626903/pexels-photo-6626903.jpeg" alt="Produto 1">
+                                <div class="product-info">
+                                    <h3>Produto 1</h3>
+                                    <p class="price">R$ 99,90</p>
+                                    <button class="btn btn-primary">Adicionar ao Carrinho</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="product-card">
+                                <img src="https://images.pexels.com/photos/6626967/pexels-photo-6626967.jpeg" alt="Produto 2">
+                                <div class="product-info">
+                                    <h3>Produto 2</h3>
+                                    <p class="price">R$ 129,90</p>
+                                    <button class="btn btn-primary">Adicionar ao Carrinho</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="product-card">
+                                <img src="https://images.pexels.com/photos/6311251/pexels-photo-6311251.jpeg" alt="Produto 3">
+                                <div class="product-info">
+                                    <h3>Produto 3</h3>
+                                    <p class="price">R$ 159,90</p>
+                                    <button class="btn btn-primary">Adicionar ao Carrinho</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <h3>Fique por dentro das novidades!</h3>
+                    <p>Cadastre-se para receber nossas ofertas em primeira mão.</p>
+                    <form class="newsletter-form">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Seu melhor e-mail" required>
+                            <button class="btn btn-dark" type="submit">Cadastrar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Modal -->
+    <div class="modal fade" id="cartModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Carrinho de Compras</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="cart-items">
+                        <!-- Cart items will be dynamically loaded here -->
+                    </div>
+                    <div class="cart-total mt-3">
+                        <h5>Total: R$ <span class="total-amount">0,00</span></h5>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continuar Comprando</button>
+                    <button type="button" class="btn btn-primary checkout-btn">Finalizar Compra</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div class="modal fade" id="checkoutModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Finalizar Compra</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="checkoutForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nome Completo</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="address" class="form-label">Endereço</label>
+                            <input type="text" class="form-control" id="address" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="payment" class="form-label">Forma de Pagamento</label>
+                            <select class="form-select" id="payment" required>
+                                <option value="">Selecione...</option>
+                                <option value="pix">PIX</option>
+                                <option value="card">Cartão de Crédito</option>
+                                <option value="transfer">Transferência Bancária</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Voltar</button>
+                    <button type="button" class="btn btn-success" id="whatsappCheckout">Finalizar no WhatsApp</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/novidades.js"></script>
+</body>
+</html>

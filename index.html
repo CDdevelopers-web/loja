@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Store - Sua Loja de Roupas Online</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Fashion Store</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#produtos">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="novidades.html">Novidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="promocoes.html">Promoções</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                            Categorias
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#camisetas">Camisetas</a></li>
+                            <li><a class="dropdown-item" href="#calcas">Calças</a></li>
+                            <li><a class="dropdown-item" href="#vestidos">Vestidos</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="promocoes.html">Ofertas</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <button class="btn btn-outline-dark me-2" type="button" data-bs-toggle="modal" data-bs-target="#cartModal">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="badge bg-dark text-white ms-1 rounded-pill cart-count">0</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-md-6">
+                    <h1 class="display-4 fw-bold">Descubra seu estilo</h1>
+                    <p class="lead">As últimas tendências em moda com preços incríveis.</p>
+                    <a href="#produtos" class="btn btn-dark btn-lg">Comprar Agora</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="produtos" class="py-5">
+        <div class="container">
+            <h2 class="section-title">Nossos Produtos</h2>
+            <div class="row g-4 products-container">
+                <!-- Products will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categorias" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Nossas Categorias</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="category-card">
+                        <img src="images/categories/casual.jpg" alt="Casual">
+                        <div class="category-overlay">
+                            <h3>Casual</h3>
+                            <a href="#" class="btn btn-outline-light">Ver Produtos</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="category-card">
+                        <img src="images/categories/formal.jpg" alt="Formal">
+                        <div class="category-overlay">
+                            <h3>Formal</h3>
+                            <a href="#" class="btn btn-outline-light">Ver Produtos</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="category-card">
+                        <img src="images/categories/esportivo.jpg" alt="Esportivo">
+                        <div class="category-overlay">
+                            <h3>Esportivo</h3>
+                            <a href="#" class="btn btn-outline-light">Ver Produtos</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="section-title mb-4">Entre em Contato</h2>
+                    <p class="mb-4">Estamos aqui para ajudar! Entre em contato conosco para tirar dúvidas, fazer sugestões ou receber atendimento personalizado.</p>
+                    
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Rua Exemplo, 123<br>Bairro - Cidade/UF<br>CEP: 12345-678</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>(11) 1234-5678<br>(11) 98765-4321</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>contato@fashionstore.com<br>suporte@fashionstore.com</span>
+                        </li>
+                    </ul>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="contact-card">
+                        <form class="contact-form">
+                            <div class="form-group mb-4">
+                                <input type="text" class="form-control" placeholder="Seu Nome">
+                            </div>
+                            <div class="form-group mb-4">
+                                <input type="email" class="form-control" placeholder="Seu Email">
+                            </div>
+                            <div class="form-group mb-4">
+                                <input type="tel" class="form-control" placeholder="Seu Telefone">
+                            </div>
+                            <div class="form-group mb-4">
+                                <textarea class="form-control" rows="5" placeholder="Sua Mensagem"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Enviar Mensagem</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h3 class="footer-title">Fashion Store</h3>
+                    <p class="footer-description">
+                        Sua loja de moda online com as últimas tendências em roupas, acessórios e calçados. Qualidade e estilo para todos os momentos.
+                    </p>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h3 class="footer-title">Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Produtos</a></li>
+                        <li><a href="#">Novidades</a></li>
+                        <li><a href="#">Promoções</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h3 class="footer-title">Categorias</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Casual</a></li>
+                        <li><a href="#">Formal</a></li>
+                        <li><a href="#">Esportivo</a></li>
+                        <li><a href="#">Acessórios</a></li>
+                        <li><a href="#">Calçados</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3">
+                    <h3 class="footer-title">Contato</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            Rua Exemplo, 123 - Cidade/UF
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            (11) 1234-5678
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            contato@fashionstore.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="footer-divider">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="copyright"> 2025 Fashion Store. Todos os direitos reservados.</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div class="modal fade" id="cartModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Carrinho de Compras</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="cart-items">
+                        <!-- Cart items will be dynamically loaded here -->
+                    </div>
+                    <div class="cart-total mt-3">
+                        <h5>Total: R$ <span class="total-amount">0,00</span></h5>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continuar Comprando</button>
+                    <button type="button" class="btn btn-primary checkout-btn">Finalizar Compra</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div class="modal fade" id="checkoutModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Finalizar Compra</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="checkoutForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nome Completo</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="address" class="form-label">Endereço</label>
+                            <input type="text" class="form-control" id="address" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="payment" class="form-label">Forma de Pagamento</label>
+                            <select class="form-select" id="payment" required>
+                                <option value="">Selecione...</option>
+                                <option value="pix">PIX</option>
+                                <option value="card">Cartão de Crédito</option>
+                                <option value="transfer">Transferência Bancária</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Voltar</button>
+                    <button type="button" class="btn btn-success" id="whatsappCheckout">Finalizar no WhatsApp</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
