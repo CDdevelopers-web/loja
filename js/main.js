@@ -176,7 +176,7 @@ $('#whatsappCheckout').click(function() {
     message += `\n*Total:* ${formatPrice(total)}`;
 
     // Número do WhatsApp da loja (substitua pelo número real)
-    const phoneNumber = '5511999999999';
+    const phoneNumber = '5517999754390';
     
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
